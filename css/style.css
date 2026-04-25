@@ -1,0 +1,364 @@
+/* ----------- Start Global Style ------------ */
+:root{
+    --fs-xxs : .75rem ;
+		--fs-xs : .875rem;
+    --text-color : #4A5565 ;
+		--border-color:#E5E7EB;
+		--primary-color: #ff5f00;
+		--dark-orange:#F54A00;
+		--semidark-red:#FB2C36;
+		--dark-red : #9F0712;
+		--secondary-color : #FFF9EC;
+		--light-orange : rgb(255, 237, 212) ;
+		--light-green : #DBFCE7;
+		--green : #00A63E ; 
+		--light-blue : #DBEAFE;
+		--blue : #155DFC;
+		--light-yellow :#FEF9C2;
+		--gold : #D08700;
+		--light-red : #FFE2E2;
+		--red : #E7000B;
+		--pink : #E60076;
+		--light-pink : #FCE7F3;
+		--text-primary-color:#101828;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+div img{
+	width: 100%;
+}
+
+h1,h2,
+h3,h4,
+h5,h6{
+	color: var(--text-primary-color);
+}
+
+.text-dark-red{
+	color: var(--dark-red);
+}
+
+.text-primary-color{
+	color: var(--primary-color);
+}
+.bg-primary-color{
+	background-color: var(--primary-color);
+}
+.text-dark-orange{
+	color: var(--dark-orange);
+}
+.fs-xxs{
+    font-size: var(--fs-xxs);
+}
+
+.fs-xs{
+	font-size: var(--fs-xs);
+}
+
+.text-green{
+	color: var(--green);
+}
+.bg-light-green{
+	background-color: var(--light-green);
+}
+.text-blue{
+	color: var(--blue);
+}
+.bg-light-blue{
+	background-color: var(--light-blue);
+}
+.text-red{
+	color: var(--red);
+}
+.bg-light-red{
+	background-color: var(--light-red);
+}
+.bg-light-orange{
+	background-color: var(--light-orange);
+}
+.bg-light-yellow{
+	background-color: var(--light-yellow);
+}
+.text-pink{
+	color: var(--pink);
+}
+.text-semidark-red{
+	color: var(--semidark-red);
+}
+.text-gold{
+	color: var(--gold);
+}
+.bg-light-pink{
+	background-color: var(--light-pink);
+}
+.text-color{
+    color: var(--text-color);
+}
+
+.bg-secondary-color{
+	background-color: var(--secondary-color);
+}
+
+/* ----------- End Global Style ------------ */
+
+/* ----------- Start Navbar Style ------------ */
+.my-nav{
+	border-bottom: .125rem solid rgb(255, 237, 212);
+}
+
+.my-nav ul li a img{
+    width: 1.875rem;
+    height: 1.875rem;
+    border: .0625rem solid rgba(255, 95, 0, 1) ;
+}
+
+.my-nav ul li a:hover,
+.my-nav .navbar-toggle:hover
+{
+	color: var(--primary-color) !important;
+	cursor: pointer;
+}
+
+.my-nav a.active,
+.my-nav a:focus{
+	color: rgba(0, 0, 0, 0.65) !important;
+}
+
+.my-nav .logo{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    background-image: linear-gradient(329deg,rgba(253, 59, 46, 1) 13%, rgba(255, 95, 0, 1) 70%);;
+}
+
+.my-nav .navbar-toggler{
+	box-shadow: none;
+	border: none;
+}
+/* ----------- End Navbar Style ------------ */
+
+/* ----------- Start Hero Style ------------ */
+
+.nav-pills .nav-item  button{
+	color: var(--text-color);
+	border-radius: 0;
+}
+
+.nav-pills .nav-item  button.active{
+	background-color: transparent !important;
+	color: var(--primary-color);
+	border-bottom: 2px solid var(--primary-color);
+}
+
+.Category .icons span{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: .5rem;
+	color: var(--primary-color);
+	background-color: var(--light-orange);
+}
+
+.Category .dishes{
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.Category .dishes span.badge{
+	height: 1.25rem;
+}
+
+.Category .nav-pills{
+	border-bottom: 1px solid var(--border-color);
+	padding-bottom: 1rem;
+}
+
+.Category .dishes .image{
+	padding: 0;
+	position: relative;
+	aspect-ratio: 3/2;
+}
+
+.Category .dishes .image img{
+	display: block;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.Category .dishes .image .layer-bottom{
+	bottom: 1rem;
+	left: 2rem;
+	right: 2rem;
+	background-color: white;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 1rem 1.875rem ;
+	border-radius: 1rem;
+}
+
+.Category .dishes .image .layer-top{
+	top: 1rem;
+	left: 2rem;
+	right: 2rem;
+	background-color: white;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 1rem ;
+	border-radius: 1rem;
+	width: fit-content;
+	gap: .3125rem;
+}
+
+.dishes .note{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	align-items: center;
+	background-color: rgb(254, 242, 242);
+	padding: 1.25rem 1rem;
+	border-radius: .625rem;
+	border-left: .25rem solid var(--red);
+}
+
+	.Category .dishes .dish-ditails{
+		overflow-y: auto;
+	}
+
+	.dishes .content button.nav-link:hover{
+		color: #364153;
+	}
+
+	.Category .dishes .tab-content{
+		max-height: 350px;
+		overflow: auto;
+	}
+
+	.Category .dishes .tab-content,
+	.Category .dishes .dish-ditails{
+  scrollbar-width: thin;
+  scrollbar-color: #fe886a4d rgba(0, 0, 0, 0);
+}
+
+:where(.ingredients li, .instructions li){
+	display: flex;
+	flex-wrap: nowrap;
+	margin-bottom: .75rem;
+	gap: 1rem;
+	color: var(--text-color);
+	align-items: center;
+}
+
+.instructions li{
+	margin-bottom: 1.5rem;
+}
+
+:where(.ingredients span, .instructions span){
+	width: 1.5625rem;
+	height: 1.5625rem;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+}
+
+.instructions span{
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: .625rem;
+	font-size: 1.125rem;
+	font-weight: bold;
+}
+
+.nutrition{
+	background-color: #F9FAFB;
+	padding: 1rem;
+	border-radius: .625rem;
+}
+
+.nutrition .icon{
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: .625rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nutrition p{
+	font-size: .75rem;
+	font-weight: 500;
+	color: var(--text-color);
+}
+
+.Category .tab-content .ingredients{
+	background-color: var(--secondary-color);
+	padding: 1rem;
+	border-radius: 1rem;
+}
+
+.chef-tips{
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.chef-tips .tip{
+	background-color: #FFFBEB;
+	padding: 1.25rem 1rem;
+	border-radius: .625rem;
+	border-left: .25rem solid #FFB900;
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: .625rem;
+}
+
+.chef-tips .tip svg{
+	color: #E17100;
+	font-weight: bold;
+	font-size: 1.25rem;
+}
+
+.dishes .btn-box{
+	padding-top: 1.875rem;
+	margin-top: 1.875rem;
+	border-top: 1px solid var(--border-color);
+}
+
+.dishes .btn-box .btn{
+	background-image: linear-gradient(to right, oklch(0.705 0.213 47.604) 0%, oklch(0.637 0.237 25.331) 100%);
+	padding: .75rem 1.5rem; 
+	border-radius: .625rem;
+	font-weight: 600;
+	color: white;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease;
+}
+
+.dishes .btn-box .btn:hover{
+	transform: scale(1.05);
+	background-image: linear-gradient(to right, oklch(0.646 0.222 41.116) 0%, oklch(0.577 0.245 27.325) 100%);
+}	
+
+/* ----------- End Hero Style ------------ */

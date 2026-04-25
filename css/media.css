@@ -1,0 +1,29 @@
+@media screen and (min-width: 992px) {
+	nav .subtitle{
+		font-size: .875rem;
+	}
+  .my-nav ul li a img {
+    width: 2.8125rem;
+    height: 2.8125rem;
+  }
+
+  .my-nav ul li a{
+		font-size: 1.25rem;
+	}
+
+	.Category .deshes .desh-info .desh-name{
+		font-size: 2.25rem !important;
+	}
+	.Category .deshes .desh-info .desh-description{
+		font-size: 1.125rem;
+	}
+
+	.nav-pills .nav-item button{
+		font-size: 1rem !important;
+	}
+
+	
+	.Category .dishes .dish-ditails{
+		height: 700px;
+	}
+}
