@@ -691,8 +691,15 @@ function setDishInfo(dishes, index) {
   setNote(dishes, index);
 }
 
+var lastNumber = null;
 function getRandomNumber(min,max) {
-  return Math.floor(Math.random() * (max - min + 1) + min);
+  var num;
+  do {
+    num = Math.floor(Math.random() * (max - min + 1)) + min;
+  } while (num === lastNumber);
+  
+  lastNumber = num;
+  return num;
 }
 
 function changeDish() {

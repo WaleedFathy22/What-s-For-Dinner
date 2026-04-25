@@ -153,6 +153,8 @@ h5,h6{
 .nav-pills .nav-item  button{
 	color: var(--text-color);
 	border-radius: 0;
+	display: block;
+	margin: auto;
 }
 
 .nav-pills .nav-item  button.active{
@@ -188,7 +190,7 @@ h5,h6{
 .Category .dishes .image{
 	padding: 0;
 	position: relative;
-	aspect-ratio: 3/2;
+	aspect-ratio: 3/3;
 }
 
 .Category .dishes .image img{
@@ -348,7 +350,7 @@ h5,h6{
 
 .dishes .btn-box .btn{
 	background-image: linear-gradient(to right, oklch(0.705 0.213 47.604) 0%, oklch(0.637 0.237 25.331) 100%);
-	padding: .75rem 1.5rem; 
+	padding: .5rem 1rem; 
 	border-radius: .625rem;
 	font-weight: 600;
 	color: white;
