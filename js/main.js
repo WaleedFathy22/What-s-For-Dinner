@@ -54,7 +54,7 @@ var dishes = [
     dishName: "Spaghetti Carbonara",
     level: "Easy",
     nation: "Italian",
-    dishImage: "../images/photo-2.avif",
+    dishImage: "images/photo-2.avif",
     description: "A classic Italian pasta dish with eggs, cheese, and pancetta",
     rate: 4.8,
     reviews: 234,
